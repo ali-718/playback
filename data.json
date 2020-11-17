@@ -1,0 +1,51 @@
+{
+  "songs": [
+    {
+      "name": "Heartbreaker",
+      "image": "https://a10.gaanacdn.com/images/albums/90/135890/crop_175x175_135890.jpg",
+      "song": "https://firebasestorage.googleapis.com/v0/b/playback-97f5b.appspot.com/o/songs%2Fheartbreaker.mp3?alt=media&token=cd999c2c-f9a6-4ec6-876f-fb4659f8dccf",
+      "singer": {
+        "name": "Justin Bieber",
+        "id": "1",
+        "image": "https://a10.gaanacdn.com/gn_pl_img/playlists/Oxd3xP3gVY/xd3xGRp5Kg/size_m_1574845086.png"
+      }
+    },
+    {
+      "name": "Society",
+      "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/30260463/original/crop:x0y0w1588h2246/hash:1521085215/IMG_5818.PNG?1521085215",
+      "song": "https://firebasestorage.googleapis.com/v0/b/playback-97f5b.appspot.com/o/songs%2Fsociety.mp3?alt=media&token=794802de-7787-4720-96ae-1adf329fe18e",
+      "singer": {
+        "name": "Riley Resa",
+        "id": "2",
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/5977210/original/resize:248x186/crop:x0y39w828h621/hash:1601353123/99000164-47C8-40E8-A10E-21BE835D2570.jpeg"
+      }
+    },
+    {
+      "name": "Olympus Mons",
+      "image": "https://a10.gaanacdn.com/images/albums/28/216828/crop_175x175_216828.jpg",
+      "song": "https://firebasestorage.googleapis.com/v0/b/playback-97f5b.appspot.com/o/songs%2Folympus%20mons.mp3?alt=media&token=0849c5ed-826f-4849-a0bc-ccf46c3ad897",
+      "singer": {
+        "name": "Hidden Horizon",
+        "id": "3",
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/6871433/original/resize:248x186/crop:x0y94w750h563/hash:1602623996/C76236F0-5449-4338-A8DF-BEE5F3C4D3E1.jpg"
+      }
+    }
+  ],
+  "singers": [
+    {
+      "name": "Justin Bieber",
+      "id": "1",
+      "image": "https://a10.gaanacdn.com/gn_pl_img/playlists/Oxd3xP3gVY/xd3xGRp5Kg/size_m_1574845086.png"
+    },
+    {
+      "name": "Riley Resa",
+      "id": "2",
+      "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/5977210/original/resize:248x186/crop:x0y39w828h621/hash:1601353123/99000164-47C8-40E8-A10E-21BE835D2570.jpeg"
+    },
+    {
+      "name": "Hidden Horizon",
+      "id": "3",
+      "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/6871433/original/resize:248x186/crop:x0y94w750h563/hash:1602623996/C76236F0-5449-4338-A8DF-BEE5F3C4D3E1.jpg"
+    }
+  ]
+}
