@@ -5,6 +5,7 @@ import Slider from "react-native-slider";
 import Home from "./src/screens/Home";
 import "./src/config/databseConfig";
 import Router from "./Router";
+import Tour from "./src/AnimationPractice.js/Tour";
 
 export default class App extends Component {
   state = {
@@ -50,7 +51,7 @@ export default class App extends Component {
             this.soundObject.setPositionAsync(position);
           }}
         /> */}
-        <Router />
+        <Tour />
       </>
     );
   }
