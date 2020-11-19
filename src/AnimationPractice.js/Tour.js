@@ -7,22 +7,27 @@ import {
   StyleSheet,
   Image,
   Animated,
+  TouchableOpacity,
 } from "react-native";
+import { SharedElement } from "react-navigation-shared-element";
 
 const data = [
   {
+    id: 1,
     image:
       "https://cdn.pixabay.com/photo/2017/09/26/20/13/eiffel-2789943_960_720.jpg",
     name: "Paris, France",
     days: 9,
   },
   {
+    id: 2,
     image:
       "https://cdn.pixabay.com/photo/2016/10/28/16/43/usa-1778564_960_720.jpg",
     name: "New York, USA",
     days: 9,
   },
   {
+    id: 3,
     image:
       "https://cdn.pixabay.com/photo/2020/06/19/16/10/limburg-5317981_960_720.jpg",
     name: "Prague, Czech Republic",
@@ -74,7 +79,12 @@ export default class Tour extends Component {
             });
 
             return (
-              <View
+              <TouchableOpacity
+                onPress={() =>
+                  this.props.navigation.navigate("Detail", {
+                    item,
+                  })
+                }
                 style={[
                   {
                     marginLeft: 20,
@@ -86,17 +96,24 @@ export default class Tour extends Component {
                 ]}
               >
                 {/* <View style={[{ overflow: "hidden" }]}> */}
-                <Animated.Image
-                  style={[
-                    style.image,
-                    { transform: [{ scale: scale }], borderRadius: 20 },
-                  ]}
-                  source={{ uri: item.image }}
-                />
-                {/* </View> */}
-                <View
-                  style={[style.image, { position: "absolute", zIndex: 1 }]}
+                <SharedElement
+                  style={[style.image]}
+                  id={`item.${item.id}.photo`}
                 >
+                  <Animated.Image
+                    style={[
+                      style.image,
+                      { transform: [{ scale: scale }], borderRadius: 20 },
+                    ]}
+                    source={{ uri: item.image }}
+                  />
+                </SharedElement>
+                {/* </View> */}
+                {/* <SharedElement
+                  style={[style.image, { position: "absolute" }]}
+                  id={`item.${item.id}.name`}
+                > */}
+                <View style={[style.image, { position: "absolute" }]}>
                   <Animated.Text
                     style={[
                       style.title,
@@ -106,7 +123,8 @@ export default class Tour extends Component {
                     {item.name}
                   </Animated.Text>
                 </View>
-              </View>
+                {/* </SharedElement> */}
+              </TouchableOpacity>
             );
           }}
         />

@@ -3,6 +3,7 @@ import { Text, View } from "react-native";
 import { Audio } from "expo-av";
 import Slider from "react-native-slider";
 import Home from "./src/screens/Home";
+import Print from "./src/screens/Print";
 import "./src/config/databseConfig";
 import Router from "./Router";
 import Tour from "./src/AnimationPractice.js/Tour";
@@ -51,7 +52,7 @@ export default class App extends Component {
             this.soundObject.setPositionAsync(position);
           }}
         /> */}
-        <Tour />
+        <Router />
       </>
     );
   }
